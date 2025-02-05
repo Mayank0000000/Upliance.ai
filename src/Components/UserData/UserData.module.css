@@ -1,0 +1,26 @@
+.container {
+    margin-top: 16px;
+    padding: 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .title {
+    margin-bottom: 16px;
+  }
+  
+  .userId {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button {
+    margin-top: 16px;
+  }
+  
