@@ -3,16 +3,16 @@ import { Button, Box, Container, Typography } from "@mui/material";
 import styles from "./Counter.module.css";
 
 const Counter: React.FC = () => {
-  const [count, setCount] = useState<number>(
+  const [count, setCount] = useState<any>(
     localStorage.getItem("count") ? Number(localStorage.getItem("count")) : 0
   );
 
   useEffect(() => {
-    localStorage.setItem("count", count);
+    return localStorage.setItem("count", count);
   }, [count]);
 
-  const handleIncrement = (): void => setCount((prev) => prev + 1);
-  const handleDecrement = (): void => setCount((prev) => Math.max(prev - 1, 0));
+  const handleIncrement = (): void => setCount((prev: number) => prev + 1);
+  const handleDecrement = (): void => setCount((prev: number) => Math.max(prev - 1, 0));
   const handleReset = (): void => setCount(0);
 
   return (

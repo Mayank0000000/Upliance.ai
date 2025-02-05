@@ -54,6 +54,7 @@ const RichTextEditor: React.FC = () => {
         style={{
           minHeight: 300,
           maxWidth: 300,
+          width: 300,
           border: '1px solid #ccc',
           borderRadius: 4,
           padding: '10px',
